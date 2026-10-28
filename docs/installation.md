@@ -2,6 +2,8 @@
 
 The implementation uses the MMCV 1.x and MMDetection 2.x APIs.
 
+Our base environment follows [HRMapNet](https://github.com/HXMap/HRMapNet). Refer to its [step-by-step installation guide](https://github.com/HXMap/HRMapNet/blob/master/docs/install.md) for setting up PyTorch, MMCV, MMDetection, MMDetection3D, and compiled framework operators. Use the reference versions below for this release, then install the PriorMaskMap package with the command at the end of this page.
+
 | Component | Reference environment |
 |---|---|
 | Python | 3.8 |

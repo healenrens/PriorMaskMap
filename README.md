@@ -4,6 +4,8 @@ Official implementation of PriorMaskMap (ECCV 2026).
 
 Camera-based vector mapping with offline raster and vector priors.
 
+This implementation is built on [HRMapNet](https://github.com/HXMap/HRMapNet).
+
 ## Contents
 
 - `configs/priormaskmap_r50_24e.py`: ResNet-50 configuration.
@@ -20,6 +22,8 @@ This repository contains one camera model and one training configuration. It doe
 ## Installation
 
 Use Python 3.8 with the CUDA-enabled framework versions in [docs/installation.md](docs/installation.md). The framework installation must include its compiled operators.
+
+The base environment follows HRMapNet. You can refer to the [HRMapNet installation guide](https://github.com/HXMap/HRMapNet/blob/master/docs/install.md) to set up PyTorch, MMCV, MMDetection, and MMDetection3D, then install PriorMaskMap as shown below.
 
 Install this package in that environment:
 
@@ -89,6 +93,10 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=29541 \
 ```
 
 Evaluation writes predictions and `metrics.json` to the selected work directory. Add `--out work_dirs/predictions.pkl` to save raw predictions.
+
+## Acknowledgements
+
+We thank the authors of [HRMapNet](https://github.com/HXMap/HRMapNet) for their research and open-source implementation, which provide the foundation for this project. We appreciate their contribution to the online vectorized mapping community.
 
 ## License
 
